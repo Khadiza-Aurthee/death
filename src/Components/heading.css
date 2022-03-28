@@ -1,0 +1,11 @@
+.Heading {
+}
+
+.Heading h1 {
+  margin: 0;
+  padding: 40px;
+  background-color: rgb(52, 97, 78);
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+}
