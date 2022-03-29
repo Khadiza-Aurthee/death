@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Heading from "./Components/heading";
+import ProductList from "./Components/productList";
 
 class App extends Component {
   constructor(props) {
@@ -8,26 +9,20 @@ class App extends Component {
     this.state = {};
   }
 
+  inventory = [
+    { borough: "Bronx", number: 1 },
+    { borough: "Manhattan", number: 2 },
+    { name: "Queens", number: 3 }
+  ];
+
   render() {
     return (
       <div className="App">
-        <h1>Deaths</h1>
+        <Heading />
+        <ProductList inventory={this.inventory} />
       </div>
     );
   }
-}
-
-function TableRow(props) {
-  let rowStyle = {
-    backgroundColor: "rgb(75, 99, 179)"
-  };
-
-  let fontWeightOponent = {
-    fontWeight: "normal"
-  };
-  let fontWeightTeam = {
-    fontWeight: "normal"
-  };
 }
 
 export default App;
