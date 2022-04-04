@@ -15,14 +15,14 @@
   background-color: #eee;
 }
 
-.ProductList .Product h2 {
+.ProductList .Product h3 {
   margin: 0;
   padding: 10px;
   background-color: rgb(0, 71, 171);
-  color: rgb(0, 71, 171);
+  color: white;
   text-align: center;
   font-size: 2rem;
-  line-height: 60px;
+  line-height: 50px;
 }
 
 .ProductList .Product h3 {
@@ -48,5 +48,5 @@
 
 .ProductList .Product .buttons button:hover {
   color: white;
-  background-color: #85b24f;
+  background-color: #add8e6;
 }
