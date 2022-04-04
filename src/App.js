@@ -12,7 +12,7 @@ class App extends Component {
   inventory = [
     { borough: "Bronx", number: 1 },
     { borough: "Manhattan", number: 2 },
-    { name: "Queens", number: 3 }
+    { borough: "Queens", number: 3 }
   ];
 
   render() {
