@@ -1,5 +1,6 @@
 .ProductList {
   display: flex;
+  justify-content: space-between;
   width: 90%;
   margin: 40px auto;
   flex-wrap: wrap;
@@ -11,7 +12,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  min-height: 250px;
+  min-height: 200px;
   background-color: rgb(198, 236, 192);
 }
 
@@ -19,7 +20,7 @@
   margin: 0;
   padding: 10px;
   background-color: rgb(155, 204, 211);
-  color: rgb(41, 171, 135);
+  color: white;
   text-align: center;
   font-size: 2rem;
   line-height: 50px;
@@ -34,6 +35,8 @@
 
 .ProductList .Product .buttons {
   display: flex;
+  flex-direction: column;
+  padding: 6px 12px;
   justify-content: center;
   margin: 10px;
 }
@@ -45,11 +48,11 @@
   margin-right: 6px;
   font-size: 1.5rem;
   border: rgb(44, 211, 155);
-  color: rgb(150, 243, 220);
+  color: white;
   background-color: rgb(99, 183, 108);
 }
 
 .ProductList .Product .buttons button:hover {
-  background-color: rgb(117, 211, 187);
+  background-color: #75d3bb;
   color: rgb(19, 167, 19);
 }

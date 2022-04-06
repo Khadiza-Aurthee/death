@@ -4,7 +4,7 @@ import "./heading.css";
 function Heading() {
   return (
     <div className="Heading">
-      <h1>Deaths</h1>
+      <h1>Common Deaths By The Borough</h1>
     </div>
   );
 }
