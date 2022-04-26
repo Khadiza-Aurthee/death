@@ -6,7 +6,13 @@ function Product(props) {
       <h3>{props.borough}</h3>
       <div className="buttons">
         <button>Details</button>
-        <button>Update Map</button>
+        <button
+          onClick={() => {
+            this.findData();
+          }}
+        >
+          Update Map
+        </button>
       </div>
     </div>
   );

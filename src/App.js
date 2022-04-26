@@ -11,6 +11,28 @@ class App extends Component {
     data: [];
   }
 
+  findData = () => {
+    console.log("CLICKED");
+    const list = this.state.data;
+    console.log(list);
+    for (let i = 0; i < list.length; i++) {
+      console.log(list[i].name);
+    }
+  };
+
+  componentDidMount = () => {
+    fetch(
+      "https://data.cityofnewyork.us/resource/jb7j-dtam.json?$$app_token=XWazGqXVIUR3iAnjxaHbH7eqV&status=incomplete"
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        this.setState({ data: data });
+      })
+      .catch((e) => {
+        alert(e);
+      });
+  };
+
   render() {
     return (
       <div className="App">
@@ -21,22 +43,5 @@ class App extends Component {
     );
   }
 }
-
-componentDidMount = () => {
-  console.log(data);
-  fetch(
-    "https://data.cityofnewyork.us/resource/jb7j-dtam.json?$$app_token=XWazGqXVIUR3iAnjxaHbH7eqV&status=incomplete"
-  )
-    // convert response to JSON
-    .then((response) => response.json())
-    .then((data) => {
-      // code to execute once data is defined
-      // Often you just want to save in state
-      this.setState({ data: data });
-    })
-    .catch((e) => {
-      alert(e);
-    });
-};
 
 export default App;
