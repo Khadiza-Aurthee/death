@@ -3,14 +3,14 @@ import "./productList.css";
 import Product from "./product";
 
 function ProductList(props) {
-  console.log(props.inventory);
+  console.log(props);
   return (
     <div className="ProductList">
-      <Product />
-      <Product />
-      <Product />
-      <Product />
-      <Product />
+      <Product findData={props.findData} />
+      <Product findData={props.findData} />
+      <Product findData={props.findData} />
+      <Product findData={props.findData} />
+      <Product findData={props.findData} />
     </div>
   );
 }

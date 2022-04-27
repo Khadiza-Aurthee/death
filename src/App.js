@@ -13,11 +13,6 @@ class App extends Component {
 
   findData = () => {
     console.log("CLICKED");
-    const list = this.state.data;
-    console.log(list);
-    for (let i = 0; i < list.length; i++) {
-      console.log(list[i].name);
-    }
   };
 
   componentDidMount = () => {
@@ -37,7 +32,7 @@ class App extends Component {
     return (
       <div className="App">
         <Heading />
-        <ProductList inventory={this.inventory} />
+        <ProductList findData={this.findData} data={this.data} />
         <VictoryBar />
       </div>
     );
