@@ -17,11 +17,11 @@ class App extends Component {
 
   componentDidMount = () => {
     fetch(
-      "https://data.cityofnewyork.us/resource/jb7j-dtam.json?$$app_token=XWazGqXVIUR3iAnjxaHbH7eqV&status=incomplete"
+      "https://data.cityofnewyork.us/resource/jb7j-dtam.json?$$app_token=XWazGqXVIUR3iAnjxaHbH7eqV"
     )
       .then((response) => response.json())
       .then((data) => {
-        this.setState({ data: data });
+        this.setState({data:data});
       })
       .catch((e) => {
         alert(e);
@@ -32,7 +32,7 @@ class App extends Component {
     return (
       <div className="App">
         <Heading />
-        <ProductList findData={this.findData} data={this.data} />
+        <ProductList findData={this.findData} data={this.state.data} />
         <VictoryBar />
       </div>
     );

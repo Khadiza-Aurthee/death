@@ -11,6 +11,7 @@ function ProductList(props) {
       <Product findData={props.findData} />
       <Product findData={props.findData} />
       <Product findData={props.findData} />
+      <Product findData={props.borough}/>
     </div>
   );
 }
