@@ -10,7 +10,7 @@ function Product(props) {
             props.findData();
           }}
         >
-          Update Map
+          Update Graph
         </button>
       </div>
     </div>

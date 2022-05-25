@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Heading from "./Components/heading";
 import ProductList from "./Components/productList";
-import { VictoryBar } from "victory";
+import { VictoryPie} from "victory";
 
 class App extends Component {
   constructor(props) {
@@ -33,7 +33,10 @@ class App extends Component {
       <div className="App">
         <Heading />
         <ProductList findData={this.findData} data={this.state.data} />
-        <VictoryBar />
+        <VictoryPie
+        colorScale={["green", "lightgreen", "turquoise", "teal", "lime" ]}
+        x = "data.leading_cause"
+         />
       </div>
     );
   }
