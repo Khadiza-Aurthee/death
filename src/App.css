@@ -3,6 +3,7 @@
   grid-template-columns: 250px auto;
   grid-template-rows: 156px auto;
   min-height: 100vh;
+  background-color: rgb(229, 246, 252);
 }
 
 .App .Heading {
